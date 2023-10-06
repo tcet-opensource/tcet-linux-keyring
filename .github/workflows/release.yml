@@ -28,7 +28,7 @@ jobs:
         uses: dev-drprasad/delete-tag-and-release@v1.0
         with:
           tag_name: latest
-          github_token: ${{ secrets.PAT_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           delete_release: true
           
       - name: Release Tar File with latest
